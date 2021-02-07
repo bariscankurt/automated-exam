@@ -1,0 +1,148 @@
+﻿@model Exam
+@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+
+<form method="post">
+    <div class="form-group">
+        <select asp-for="examTitle" id="mySelect" onchange="myFunction()" class="form-control">
+            <option>@ViewBag.links[0]</option>
+            <option>@ViewBag.links[1]</option>
+            <option>@ViewBag.links[2]</option>
+            <option>@ViewBag.links[3]</option>
+            <option>@ViewBag.links[4]</option>
+
+        </select>
+        <br />
+<textarea asp-for="examArticle" id="articleText" class="form-control" rows="10">
+    
+</textarea>
+        <br />
+        <input asp-for="question1" class="form-control" value="Soru 1)" />
+        <div class="row">
+            <div class="col-6">
+                <input asp-for="question1AnswerA" class="form-control" value="A)" />
+            </div>
+            <div class="col-6">
+                <input asp-for="question1AnswerB" class="form-control" value="B)" />
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-6">
+                <input asp-for="question1AnswerC" class="form-control" value="C)" />
+            </div>
+            <div class="col-6">
+                <input asp-for="question1AnswerD" class="form-control" value="D)" />
+            </div>
+        </div>
+        <br />
+        <p>Doğru Cevap:</p>
+        <select class="form-control" asp-for="question1CorrectAnswer">
+            <option>A</option>
+            <option>B</option>
+            <option>C</option>
+            <option>D</option>
+        </select>
+        <br />
+        <input asp-for="question2" class="form-control" value="Soru 2)" />
+        <div class="row">
+            <div class="col-6">
+                <input asp-for="question2AnswerA" class="form-control" value="A)" />
+            </div>
+            <div class="col-6">
+                <input asp-for="question2AnswerB" class="form-control" value="B)" />
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-6">
+                <input asp-for="question2AnswerC" class="form-control" value="C)" />
+            </div>
+            <div class="col-6">
+                <input asp-for="question2AnswerD" class="form-control" value="D)" />
+            </div>
+        </div>
+        <br />
+        <p>Doğru Cevap:</p>
+        <select class="form-control" asp-for="question2CorrectAnswer">
+            <option>A</option>
+            <option>B</option>
+            <option>C</option>
+            <option>D</option>
+        </select>
+        <br />
+        <input asp-for="question3" class="form-control" value="Soru 3)" />
+        <div class="row">
+            <div class="col-6">
+                <input asp-for="question3AnswerA" class="form-control" value="A)" />
+            </div>
+            <div class="col-6">
+                <input asp-for="question3AnswerB" class="form-control" value="B)" />
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-6">
+                <input asp-for="question3AnswerC" class="form-control" value="C)" />
+            </div>
+            <div class="col-6">
+                <input asp-for="question3AnswerD" class="form-control" value="D)" />
+            </div>
+        </div>
+        <br />
+        <p>Doğru Cevap:</p>
+        <select asp-for="question3CorrectAnswer" class="form-control">
+            <option>A</option>
+            <option>B</option>
+            <option>C</option>
+            <option>D</option>
+        </select>
+        <br />
+        <input asp-for="question4" class="form-control" value="Soru 4)" />
+        <div class="row">
+            <div class="col-6">
+                <input asp-for="question4AnswerA" class="form-control" value="A)" />
+            </div>
+            <div class="col-6">
+                <input asp-for="question4AnswerB" class="form-control" value="B)" />
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-6">
+                <input asp-for="question4AnswerC" class="form-control" value="C)" />
+            </div>
+            <div class="col-6">
+                <input asp-for="question4AnswerD" class="form-control border border-dark" value="D)" />
+            </div>
+        </div>
+        <br />
+        <p>Doğru Cevap:</p>
+        <select asp-for="question4CorrectAnswer" class="form-control">
+            <option>A</option>
+            <option>B</option>
+            <option>C</option>
+            <option>D</option>
+        </select>
+        </br>
+        <button type="submit" class="btn btn-primary form-control">SINAV OLUŞTUR</button>
+    </div>
+</form>
+
+
+<script type="text/javascript">
+    var makale1 = '@ViewBag.articles[0]'
+    var makale2 = '@ViewBag.articles[1]'
+    var makale3 = '@ViewBag.articles[2]'
+    var makale4 = '@ViewBag.articles[3]'
+    var makale5 = '@ViewBag.articles[4]'
+    var makaleList = [makale1,makale2,makale3,makale4,makale5]
+    function myFunction() {
+        console.log("fonksiyona girdik")
+
+    for (var i = 0; i < 5; i++) {
+        if (document.getElementById("mySelect").selectedIndex == i.toString()) {
+            document.getElementById("articleText").innerHTML = makaleList[i]
+        }
+    }
+    }
+
+
+</script>

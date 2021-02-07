@@ -1,0 +1,208 @@
+﻿@model Exam
+@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+<div>
+    <div class="card">
+        <div class="card-body">
+            @Model.examArticle
+        </div>
+    </div>
+    <br />
+
+
+    <div class="row">
+        <div class="col-5">
+            <form>
+            <div class="card m-2 border-dark">
+                <div class="card-body">
+                    @Model.question1
+                </div>
+            </div>
+            <div class="border border-secondary m-1" onclick="question1AnswerA.click()">
+                <input type="radio" name="q" id="question1AnswerA" value="A">
+                <label for="question1AnswerA">
+                    @Model.question1AnswerA
+                </label>
+            </div>
+
+            <div class="border border-secondary m-1" onclick="question1AnswerB.click()">
+                <input type="radio" name="q" id="question1AnswerB" value="B">
+                <label for="question1AnswerB">
+                    @Model.question1AnswerB
+                </label>
+            </div>
+            <div class="border border-secondary m-1" onclick="question1AnswerC.click()">
+                <input type="radio" name="q" id="question1AnswerC" value="C">
+                <label for="question1AnswerC">
+                    @Model.question1AnswerC
+                </label>
+            </div>
+            <div class="border border-secondary m-1" onclick="question1AnswerD.click()">
+                <input type="radio" name="q" id="question1AnswerD" value="D">
+                <label for="question1AnswerD">
+                    @Model.question1AnswerD
+                </label>
+            </div>
+            </form>
+        </div>
+        <div class="col-1"></div>
+        <div class="col-5">
+            <form>
+            <div class="card m-2 border-dark">
+                <div class="card-body">
+                    @Model.question2
+                </div>
+            </div>
+            <div class="border border-secondary m-1" onclick="question2AnswerA.click()">
+                <input type="radio" name="q" id="question2AnswerA" value="A">
+                <label for="question2AnswerA">
+                    @Model.question2AnswerA
+                </label>
+            </div>
+            <div class="border border-secondary m-1" onclick="question2AnswerB.click()">
+                <input type="radio" name="q" id="question2AnswerB" value="B">
+                <label for="question2AnswerB">
+                    @Model.question2AnswerB
+                </label>
+            </div>
+            <div class="border border-secondary m-1" onclick="question2AnswerC.click()">
+                <input type="radio" name="q" id="question2AnswerC" value="C">
+                <label for="question2AnswerC">
+                    @Model.question2AnswerC
+                </label>
+            </div>
+
+            <div class="border border-secondary m-1" onclick="question2AnswerD.click()">
+                <input type="radio" name="q" id="question2AnswerD" value="D">
+                <label for="question2AnswerD">
+                    @Model.question2AnswerD
+                </label>
+            </div>
+            </form>
+        </div>
+    </div>
+    <br />
+    <div class="row">
+        <div class="col-5">
+            <form>
+            <div class="card m-2 border-dark">
+                <div class="card-body">
+                    @Model.question3
+                </div>
+            </div>
+            <div class="border border-secondary m-1" onclick="question3AnswerA.click()">
+                <input type="radio" name="q" id="question3AnswerA" value="A">
+                <label for="question3AnswerA">
+                    @Model.question3AnswerA
+                </label>
+            </div>
+            <div class="border border-secondary m-1" onclick="question3AnswerB.click()">
+                <input type="radio" name="q" id="question3AnswerB" value="B">
+                <label for="question3AnswerB">
+                    @Model.question3AnswerB
+                </label>
+            </div>
+            <div class="border border-secondary m-1" onclick="question3AnswerC.click()">
+                <input type="radio" name="q" id="question3AnswerC" value="C">
+                <label for="question3AnswerC">
+                    @Model.question3AnswerC
+                </label>
+            </div>
+            <div class="border border-secondary m-1" onclick="question3AnswerD.click()">
+                <input type="radio" name="q" id="question3AnswerD" value="D">
+                <label for="question3AnswerD">
+                    @Model.question3AnswerD
+                </label>
+            </div>
+            </form>
+        </div>
+        <div class="col-1"></div>
+        <div class="col-5">
+            <form>
+            <div class="card m-2 border-dark">
+                <div class="card-body">
+                    @Model.question4
+                </div>
+            </div>
+            
+            <div class="border border-secondary m-1" onclick="question4AnswerA.click()">
+                <input type="radio" name="q" id="question4AnswerA" value="A">
+                <label for="question4AnswerA">
+                    @Model.question4AnswerA
+                </label>
+            </div>
+            <div class="border border-secondary m-1" onclick="question4AnswerB.click()">
+                <input type="radio" name="q" id="question4AnswerB" value="B">
+                <label for="question4AnswerB">
+                    @Model.question4AnswerB
+                </label>
+            </div>
+
+            <div class="border border-secondary m-1" onclick="question4AnswerC.click()">
+                <input type="radio" name="q" id="question4AnswerC" value="C">
+                <label for="question4AnswerC">
+                    @Model.question4AnswerC
+                </label>
+            </div>
+            
+                <div class="border border-secondary m-1" onclick="question4AnswerD.click()">
+                    <input type="radio" name="q" id="question4AnswerD" value="D">
+                    <label for="question4AnswerD">
+                        @Model.question4AnswerD
+                    </label>
+                </div>
+            </form>
+            
+        </div>
+    </div>
+    <div class="row mt-2">
+        <div class="col-4"></div>
+        <input type="button" class="btn btn-sm btn-primary col-4" value="SINAVI BİTİR"
+               onclick="getCorrectAnswersUsingAjax(@Model.Id)" />
+        <div class="col-4"></div>
+    </div>
+    
+</div>
+<p id="doldur"></p>
+<script type="text/javascript">
+    function compareAnswer(correctAnswerString) {
+        console.log(correctAnswerString)
+        var counter = 0
+        var responseObjectCounter = 0
+        var answers = document.getElementsByName("q")
+        if (answers != null) {
+            for (var i = 0; i < answers.length; i++) {
+                if (i % 4 == 0 && i != 0)
+                    responseObjectCounter += 1
+                if (answers[i].checked) {
+                    if (answers[i].value == correctAnswerString[responseObjectCounter]) {
+                        answers[i].parentElement.style.backgroundColor = "green"
+                    }
+                    else {
+                        answers[i].parentElement.style.backgroundColor = "red"
+                    }
+                }
+                
+            }
+        }
+    }
+    function getCorrectAnswersUsingAjax(examId) {
+        $.ajax({
+            url: '@Url.Action("GetCorrectAnswers")',
+            type: "POST",
+            data: { ExamId: examId },
+            dataType: "json",
+            success: function (response) {
+                compareAnswer(response)
+                
+            }
+        })
+        
+    }
+
+    
+
+</script>
