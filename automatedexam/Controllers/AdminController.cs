@@ -38,7 +38,7 @@ namespace automatedexam.Controllers
                 var result = await userManager.CreateAsync(user,model.Password);
                 if (result.Succeeded)
                 {
-                    return RedirectToAction("Account","Login");
+                    return RedirectToAction("Index","Home");
                 }
                 else
                 {

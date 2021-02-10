@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "2PYAMuoGHxCaEtCnokJSZsuuQHRS5ZVYwUxuZ4NqZpfbjYghAKEg6s/qwwbRKBTYxPrjtE0v2MQ5hUCvQJr/oQ==",
+  "dgSpecHash": "3+BBxK5gedNUrsml8JR32pb+TT5IpmpTMd8yoWUwi5wOKFpdd9841EJsUr0IMDym3qkssaW7JTAecSnspNNcjg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\can2\\Desktop\\automatedexam\\automatedexam\\automatedexam.csproj",
+  "projectFilePath": "C:\\Users\\can2\\Desktop\\automated exam\\automated-exam\\automatedexam\\automatedexam.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\can2\\.nuget\\packages\\htmlagilitypack\\1.11.30\\htmlagilitypack.1.11.30.nupkg.sha512",
     "C:\\Users\\can2\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",

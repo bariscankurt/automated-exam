@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\can2\\Desktop\\automatedexam\\automatedexam\\automatedexam.csproj": {}
+    "C:\\Users\\can2\\Desktop\\automated exam\\automated-exam\\automatedexam\\automatedexam.csproj": {}
   },
   "projects": {
-    "C:\\Users\\can2\\Desktop\\automatedexam\\automatedexam\\automatedexam.csproj": {
+    "C:\\Users\\can2\\Desktop\\automated exam\\automated-exam\\automatedexam\\automatedexam.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\can2\\Desktop\\automatedexam\\automatedexam\\automatedexam.csproj",
+        "projectUniqueName": "C:\\Users\\can2\\Desktop\\automated exam\\automated-exam\\automatedexam\\automatedexam.csproj",
         "projectName": "automatedexam",
-        "projectPath": "C:\\Users\\can2\\Desktop\\automatedexam\\automatedexam\\automatedexam.csproj",
+        "projectPath": "C:\\Users\\can2\\Desktop\\automated exam\\automated-exam\\automatedexam\\automatedexam.csproj",
         "packagesPath": "C:\\Users\\can2\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\can2\\Desktop\\automatedexam\\automatedexam\\obj\\",
+        "outputPath": "C:\\Users\\can2\\Desktop\\automated exam\\automated-exam\\automatedexam\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
