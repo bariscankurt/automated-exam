@@ -37,6 +37,11 @@ namespace automatedexam.Models
         public string question2CorrectAnswer { get; set; }
         public string question3CorrectAnswer { get; set; }
         public string question4CorrectAnswer { get; set; }
-        public string time = DateTime.Now.ToShortDateString();
+        public DateTime time { get; set; }
+        public Exam()
+        {
+            this.time = DateTime.Today;
+        }
+        
     }
 }

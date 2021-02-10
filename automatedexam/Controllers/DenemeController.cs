@@ -33,7 +33,7 @@ namespace automatedexam.Controllers
         {
             _appDbContext.Exams.Add(model);
             _appDbContext.SaveChanges();
-            return View("Test1",model);
+            return RedirectToAction("ExamList","Deneme");
         }
         public IActionResult tested()
         {
